@@ -14,7 +14,7 @@
 <div id="infoBar" class="hiddenBars">
 <div id="infoBarText">
 <p id="infoBarTextP">
-The game is played by clicking on the color requested in typed text. For example, if the text reads "White" in green letters, you must press the 
+Thes game is played by clicking on the color requested in typed text. For example, if the text reads "White" in green letters, you must press the 
 white button and ignore the green color of the letters. As the game begins, both a total time and a response time start running. If the response time
 runs out before a color has been pressed or the answer is wrong, you will be given a new color and a penalty is added to your total time. The game is
 finished once enough points have been received. To get in the High Scores section, the game must be played in the hard play mode.
