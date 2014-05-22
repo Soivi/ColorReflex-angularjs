@@ -20,26 +20,6 @@
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
 	<link href="styles/gamestyle.css" rel="stylesheet" type="text/css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  </head>
-  <body ng-app="colorReflexAngularjsApp">
-  <header>
-    <img src="images/logo.png" alt="some_text">
-  </header>
-<nav>
-  <a href="#/main">Game</a>
-  <a href="#/main2">Video</a>
-  <a href="/js/">Pictures</a>
-  <a href="/jquery/">Feedback</a>
-</nav> 
-
-
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <!-- Add your site or application content here -->
-    <div class="container" ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
      <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -61,6 +41,7 @@
     <script src="bower_components/jquery/dist/jquery.js"></script> -->
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"> </script> 
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -68,9 +49,31 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <!-- endbuild -->
+
+  </head>
+  <body ng-app="colorReflexAngularjsApp">
+  <header>
+    <img src="images/logo.png" alt="some_text">
+  </header>
+<nav>
+  <a href="#/main">Game</a>
+  <a href="#/main2">Video</a>
+  <a href="/js/">Pictures</a>
+  <a href="/jquery/">Feedback</a>
+</nav> 
+
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="container" ng-include="'views/feedback.html'" ng-controller="MainCtrl"></div>
+
+
 <footer>
-  <p>Lauri Soivi</p>
-  <p>soivi.net</p>
+  <p>Lauri Soivi <a href="http://soivi.net/">soivi.net </a></p>
+  <p></p>
 </footer> 
 </body>
 </html>

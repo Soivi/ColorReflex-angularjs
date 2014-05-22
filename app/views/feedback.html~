@@ -1,0 +1,17 @@
+<div id="feedbackArea">
+
+<form id="feedbackForm" >
+    <h2 style="float:left;">Feedback</h2>
+	<p>* required</p>
+   <label for="name"> Name*:</label><br><input type="text" id="name" required size="40" ><br>
+
+   <label for="email">Email:</label><br><input type="email" id="email" size="50" ><br>
+
+    <label for="phone">Phone:</label><br><input type="tel" id="phone" size="30" pattern="\+?[0-9 () \-]+"><br>
+
+    <label for="message">Message*:</label><br><textarea rows="5" cols="50"  id="message" ></textarea><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</div>

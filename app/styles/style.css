@@ -24,3 +24,14 @@ footer {
 	border-bottom-right-radius: 30px;
 	border-bottom-left-radius: 30px;
 }
+
+footer p {
+	text-align:center;
+}
+
+#feedbackForm {
+	width:500px;
+	text-align:left;
+	margin-right:auto;
+	margin-left:auto;
+}
