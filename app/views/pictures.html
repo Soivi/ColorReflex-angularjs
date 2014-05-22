@@ -1,0 +1,37 @@
+<div id="photogalleryArea">
+	<script src="scripts/jquery.fancybox-1.3.4.js"></script>
+	<script>
+
+$("a.grouped_elements").fancybox();
+$(document).ready(function() {
+
+	/* This is basic - uses default settings */
+	
+	$("a#single_image").fancybox();
+	
+	/* Using custom settings */
+	
+	$("a#inline").fancybox({
+		'hideOnContentClick': true
+	});
+
+	/* Apply fancybox to multiple items */
+	
+	$("a.group").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false
+	});
+	
+});
+</script>
+	<a class="grouped_elements" rel="group1" href="images/red.png"><img src="images/red.png" alt=""/></a>
+<a class="grouped_elements" rel="group1" href="images/red.png"><img src="images/red.png" alt=""/></a> 	
+
+<a class="grouped_elements" rel="group2" href="images/red.png"><img src="images/red.png" alt=""/></a> 
+<a class="grouped_elements" rel="group2" href="images/red.png"><img src="images/red.png" alt=""/></a>
+
+
+</div>
