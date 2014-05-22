@@ -58,7 +58,7 @@
     <img src="images/logo.png" alt="some_text">
   </header>
 <nav>
-  <a href="#main">Game</a>
+  <a href="#">Game</a>
   <a href="#video">Video</a>
   <a href="#pictures">Pictures</a>
   <a href="#feedback">Feedback</a>
@@ -73,7 +73,7 @@
 
 
 <footer>
-  <p>Lauri Soivi <a href="http://soivi.net/">soivi.net </a></p>
+  <p>Lauri Soivi <a href="soivi.net">soivi.net </a></p>
   <p></p>
 </footer> 
 </body>
