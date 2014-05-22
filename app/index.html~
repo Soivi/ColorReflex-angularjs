@@ -20,7 +20,6 @@
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
 	<link href="styles/gamestyle.css" rel="stylesheet" type="text/css">
 	<link href="styles/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
      <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -38,8 +37,8 @@
     <![endif]-->
 
     <!-- build:js scripts/vendor.js -->
-    <!-- bower:js 
-    <script src="bower_components/jquery/dist/jquery.js"></script> -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script> 
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
@@ -73,7 +72,7 @@
 
 
 <footer>
-  <p>Lauri Soivi <a href="soivi.net">soivi.net </a></p>
+  <p>Lauri Soivi <a href="http://www.soivi.net">soivi.net </a></p>
   <p></p>
 </footer> 
 </body>

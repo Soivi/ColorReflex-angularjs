@@ -74,33 +74,12 @@ $(document).ready(function() {
 </script>
 
 
-<div id="slideshow">
-     <div id="slideshowWindow">
-    	<div class="slide">
-        	     <img src="images/img1.png" />
-                 <div class="slideText">
-                     <h2 class="slideTitle">Slide 1</h2>
-                     <p class="slideDes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                     <p class="slideLink"><a href="#">click here</a></p>
-                 </div><!--/slideText-->
-            </div><!--/slide-->
-        <div class="slide">
-        	 <img src="images/img2.png" />
-	<div class="slideText">
-                     <h2 class="slideTitle">Slide 2</h2>
-                     <p class="slideDes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                     <p class="slideLink"><a href="#">click here</a></p>
-                 </div><!--/slideText-->
-        </div><!--/slide-->
-        <div class="slide">
-        	 <img src="images/img3.png" />
-	<div class="slideText">
-                     <h2 class="slideTitle">Slide 3</h2>
-                     <p class="slideDes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                     <p class="slideLink"><a href="#">click here</a></p>
-                 </div><!--/slideText-->
-        </div><!--/slide-->
-     </div><!--/slideshowWindow-->
+<div id="slideshow"> 
+	<div id="slideshowWindow"> 
+		<div class="slide"> <img src="images/img1.png" /></div><!--/slide--> 
+		<div class="slide"> <img src="images/img2.png" /> </div><!--/slide--> 
+		<div class="slide"> <img src="images/img3.png" /> </div><!--/slide--> 
+	</div><!--/slideshowWindow--> 
 </div><!--/slideshow-->
 
 </div>
