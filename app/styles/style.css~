@@ -36,6 +36,15 @@ footer p {
 	margin-left:auto;
 }
 
+#pictureArea {
+	width:500px;
+	text-align:left;
+	margin-right:auto;
+	margin-left:auto;
+	overflow:hidden
+}
+
+
 #slideshow #slideshowWindow {
 	width:500px;
 	height:257px;
@@ -43,6 +52,7 @@ footer p {
 	padding:0;
 	position:relative;
 	overflow:hidden;
+	border:solid 1px black;
 }
 
 #slideshow #slideshowWindow .slide {
@@ -59,12 +69,9 @@ footer p {
 	left:0px;
 	width:100%;
 	height:130px;
-	background-image:url(greyBg.png);
-	background-repeat:repeat;
 	margin:0;
 	padding:0;
 	color:#ffffff;
-	font-family:Myriad Pro, Arial, Helvetica, sans-serif;
 }
 
 #slideshow #slideshowWindow .slide .slideText a:link, #slideshow #slideshowWindow .slide .slideText a:visited {
@@ -75,4 +82,12 @@ footer p {
 #slideshow #slideshowWindow .slide .slideText h2, #slideshow #slideshowWindow .slide .slideText p {
 	margin:10px 0 0 10px;
 	padding:0;
+}
+
+#leftPicture {
+	margin-left:1px;
+}
+
+#rightPicture {
+	margin-right:1px;
 }
