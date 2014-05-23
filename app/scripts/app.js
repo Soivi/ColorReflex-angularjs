@@ -20,3 +20,14 @@ colorReflexAngularjsApp.config(function($routeProvider) {
 				templateUrl : 'views/feedback.html',
 			});
 });
+
+
+colorReflexAngularjsApp.controller('NavigationCtrl', function($scope, $location) {
+    $scope.isActive = function(route) {
+	if(route === $location.path()) {
+		return "selectedMenu";
+	} else {
+		return "normalMenu";
+	}
+    }
+});

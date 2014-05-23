@@ -19,6 +19,7 @@
     <!-- endbuild -->
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
 	<link href="styles/gamestyle.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="styles/navigation.css" />
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
      <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -37,11 +38,10 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script> 
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-	
+    <script src="bower_components/angular-route/angular-route.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -50,17 +50,28 @@
         <script src="scripts/controllers/main.js"></script>
         <!-- endbuild -->
 
+	<script type="text/javascript" src="scripts/script.js"></script>
+
   </head>
   <body ng-app="colorReflexAngularjsApp">
   <header>
     <img src="images/logo.png" alt="some_text">
   </header>
-<nav>
-  <a href="#">Game</a>
-  <a href="#video">Video</a>
-  <a href="#pictures">Pictures</a>
-  <a href="#feedback">Feedback</a>
-</nav> 
+
+<div id="menu-container" ng-controller="NavigationCtrl">
+
+<ul id="navigationMenu">
+
+<li><a href="#" ng-class="isActive('/')">Game</a></li>
+<li><a href="#video" ng-class="isActive('/video')">Video</a></li>
+<li><a href="#pictures" ng-class="isActive('/pictures')">Pictures</a></li>
+<li><a href="#feedback" ng-class="isActive('/feedback')">Feedback</a></li>
+<li><a href="#" ng-class="isActive('/About us')">About us</a></li>
+<li><a href="#" ng-class="isActive('/Contact us')">Contact us</a></li>
+
+</ul>
+
+</div>
 
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -72,7 +83,6 @@
 
 <footer>
   <p>Lauri Soivi <a href="http://www.soivi.net">soivi.net </a></p>
-  <p></p>
 </footer> 
 </body>
 </html>
