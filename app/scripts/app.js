@@ -2,7 +2,7 @@
 
 var colorReflexAngularjsApp = angular
   .module('colorReflexAngularjsApp', [
-	"ngRoute"
+	"ngRoute", "ngAnimate"
 ]);
 
 colorReflexAngularjsApp.config(function($routeProvider) {
@@ -31,3 +31,28 @@ colorReflexAngularjsApp.controller('NavigationCtrl', function($scope, $location)
 	}
     }
 });
+
+colorReflexAngularjsApp.controller('NavigationCtrl', function($scope, $location) {
+    $scope.isActive = function(route) {
+	if(route === $location.path()) {
+		return "selectedMenu";
+	} else {
+		return "normalMenu";
+	}
+    }
+});
+
+colorReflexAngularjsApp.controller('PageCtrl', function($scope, $location) {
+    $scope.isActive = function() {
+	if("/video" === $location.path()) {
+		return "videoPage";
+	} else if("/pictures" === $location.path()) {
+		return "picturePage";
+	} else if("/feedback" === $location.path()) {
+		return "feedbackPage";
+	} else {
+		return "mainPage";
+	}
+    }
+});
+

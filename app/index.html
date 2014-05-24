@@ -49,16 +49,17 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <!-- endbuild -->
-
-	<script type="text/javascript" src="scripts/script.js"></script>
+	<script type="text/javascript" src="scripts/angular-animate.min.js"></script>
+	<script type="text/javascript" src="scripts/navigation.js"></script>
 
   </head>
-  <body ng-app="colorReflexAngularjsApp">
+ <section id="headerSection">
+  <body ng-app="colorReflexAngularjsApp" ng-class="isActive()" ng-controller="PageCtrl">
   <header>
     <img src="images/logo.png" alt="some_text">
   </header>
 
-<div id="menu-container" ng-controller="NavigationCtrl">
+<nav id="menu-container" ng-controller="NavigationCtrl">
 
 <ul id="navigationMenu">
 
@@ -66,23 +67,20 @@
 <li><a href="#video" ng-class="isActive('/video')">Video</a></li>
 <li><a href="#pictures" ng-class="isActive('/pictures')">Pictures</a></li>
 <li><a href="#feedback" ng-class="isActive('/feedback')">Feedback</a></li>
-<li><a href="#" ng-class="isActive('/About us')">About us</a></li>
-<li><a href="#" ng-class="isActive('/Contact us')">Contact us</a></li>
 
 </ul>
 
-</div>
+</nav>
+</section>
 
+<footer>
+  <p>Lauri Soivi <a href="http://www.soivi.net">soivi.net </a></p>
+</footer> 
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
     <div class="container" ng-view ng-controller="MainCtrl"></div>
-
-
-<footer>
-  <p>Lauri Soivi <a href="http://www.soivi.net">soivi.net </a></p>
-</footer> 
 </body>
 </html>
