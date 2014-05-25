@@ -21,7 +21,7 @@ Create config.ini under app/ folder for highscore.php.
 		db_database = database
 		
 ### config.json
-Create config.json to index.html where url is where is your highscore.php.
+Create config.json to colorReflex.js where url is where is your highscore.php.
 config.json path is app/scripts/. Or if you have highscore.php under app/ you can use example.
 
 		{
