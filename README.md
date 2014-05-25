@@ -22,6 +22,7 @@ Create config.ini to highscore.php
 		
 ### config.json
 Create config.json to index.html where url is where is your highscore.php.
+config.json path is app/scripts/
 
 		{
 			"url": "www.url.com"

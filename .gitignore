@@ -3,4 +3,3 @@ node_modules
 .sass-cache
 app/scripts/config.json
 config.ini
-config.json
