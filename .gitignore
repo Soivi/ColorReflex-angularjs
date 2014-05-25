@@ -2,3 +2,5 @@ node_modules
 .tmp
 .sass-cache
 app/scripts/config.json
+config.ini
+config.json
