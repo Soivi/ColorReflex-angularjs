@@ -2,9 +2,9 @@ ColorReflex-angularjs
 =====================
 
 ColorReflex is color game where you pick a right color. ColorReflex is JavaScript and JQuery game.
-Server side is using php. Site is builded with angularJS.
+Server side is using php. Site is builded with AngularJS.
 
-More you can find in here: http://soivi.net/2014/color-reflex/
+Example can find in here: http://soivi.net/2014/color-reflex/
 
 ## Deploy
 
@@ -12,7 +12,7 @@ More you can find in here: http://soivi.net/2014/color-reflex/
 Use database.sql to create table and test data.
 
 ### config.ini
-Create config.ini to highscore.php
+Create config.ini under app/ folder for highscore.php.
 
 		[database]
 		db_username = username
@@ -22,8 +22,8 @@ Create config.ini to highscore.php
 		
 ### config.json
 Create config.json to index.html where url is where is your highscore.php.
-config.json path is app/scripts/
+config.json path is app/scripts/. Or if you have highscore.php under app/ you can use example.
 
 		{
-			"url": "www.url.com"
+			"url": "highscores.php"
 		}
