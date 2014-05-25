@@ -57,6 +57,11 @@ $(document).ready(function() {
 		var slideWidth = 500;
 		var slides = $('.slide');
 		var numberOfSlides = slides.length;
+		var slideShowInterval;
+		var speed = 3000;
+		
+		//Assign a timer, so it will run periodically
+		slideShowInterval = setInterval(changePosition, speed);
 		
 		slides.wrapAll('<div id="slidesHolder"></div>')
 		  
@@ -80,6 +85,8 @@ $(document).ready(function() {
 										
 			//hide/show controls
 			manageNav(currentPosition);
+			clearInterval(slideShowInterval);
+			slideShowInterval = setInterval(changePosition, speed);
 			moveSlide();
 		});
 		
@@ -92,10 +99,27 @@ $(document).ready(function() {
 			else { $('#rightPicture').show() }
 		}
 		
+			//changePosition: this is called when the slide is moved by the timer and NOT when the next or previous buttons are clicked
+		function changePosition() {
+			if(currentPosition == numberOfSlides - 1) {
+				currentPosition = 0;
+				manageNav(currentPosition);
+			} else {
+				currentPosition++;
+				manageNav(currentPosition);
+			}
+			moveSlide();
+		}
+		
 		//moveSlide: this function moves the slide 
 		function moveSlide() {
 				$('#slidesHolder').animate({'marginLeft' : slideWidth*(-currentPosition)});
 		}
+		
+		$('.hoverMenu').click(function(){
+			clearInterval(slideShowInterval);
+		});
+		
 	});
 </script>
 

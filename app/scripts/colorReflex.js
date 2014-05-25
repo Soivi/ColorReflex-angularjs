@@ -262,4 +262,8 @@ $(function () {
 			}
 			$('#highScoresBar').fadeToggle(1500);
 		});
+		
+		$('.hoverMenu').click(function(){
+			stopGame();
+		});
 });
