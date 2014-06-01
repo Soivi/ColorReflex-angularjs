@@ -26,6 +26,7 @@ $(function () {
 		$('#yourRecordText').text(yourRecordEasy);
 		var timeBarInterval;
 		var plname = "";
+		var startingGameInterval;
 		
 		// Random first Quess
 		for (i = colorList.length; i > 9; i--) {
@@ -125,10 +126,10 @@ $(function () {
 			var time = 5;
 			rightAnswers = 0;
 			gameTime = 0;
-			var interval = window.setInterval(function(){
+			startingGameInterval = window.setInterval(function(){
 				$('#startStopButton').text('Starting ' + time);
 				if(time == 0) {
-					clearInterval(interval);
+					clearInterval(startingGameInterval);
 					$('#startStopButton').text('Stop');
 					newQuestion();
 					$('.colorButton').attr("disabled", false);
@@ -265,5 +266,11 @@ $(function () {
 		
 		$('.hoverMenu').click(function(){
 			stopGame();
+			clearInterval(startingGameInterval);
+		});
+		
+		$('.selectedMenu').click(function(){
+			stopGame();
+			clearInterval(startingGameInterval);
 		});
 });
